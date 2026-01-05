@@ -19,6 +19,15 @@ TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#MistOS
+MISTOS_MAINTAINER := Chronix
+TARGET_DISABLE_EPPE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
+TARGET_ENABLE_BLUR := true
+BYPASS_CHARGE_SUPPORTED := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_violet
 PRODUCT_DEVICE := violet
@@ -27,6 +36,3 @@ PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-#AviumUI
--include device/xiaomi/violet/avium_vio.mk
