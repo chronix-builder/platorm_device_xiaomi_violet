@@ -28,5 +28,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 675" \
+    RisingMaintainer="Chronix"
+
+
 #AviumUI
--include device/xiaomi/violet/avium_vio.mk
+-include device/xiaomi/violet/rising_vio.mk
