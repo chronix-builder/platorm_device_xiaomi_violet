@@ -1,0 +1,9 @@
+#MistOS
+ro.mist.display=2340 x 1080, 60 hz
+ro.mist.battery=4000mah
+ro.mist.soc=Snapdragon® 675
+ro.mist.camera=48MP + 5MP
+ro.mist.front=13MP
+ro.mist.platform=SM6150
+ro.mist.screen=IPS LCD
+ro.mist.device.name=Redmi Note 7 Pro

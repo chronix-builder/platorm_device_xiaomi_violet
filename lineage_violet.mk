@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit MemeCamera
 $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 
+# Custom MistOS about phone properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/mist_vio.prop
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
@@ -23,8 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 MISTOS_MAINTAINER := Chronix
 TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
+WITH_GMS := false
 TARGET_ENABLE_BLUR := true
 BYPASS_CHARGE_SUPPORTED := true
 
